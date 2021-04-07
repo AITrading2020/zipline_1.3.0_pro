@@ -2068,6 +2068,7 @@ class TradingAlgorithm(object):
             return None
 
         amount = self._calculate_order_target_percent_amount(asset, target)
+        # print(amount)
         return self.order(asset, amount,
                           limit_price=limit_price,
                           stop_price=stop_price,
